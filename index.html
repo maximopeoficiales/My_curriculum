@@ -6,69 +6,120 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>MI CURRICULUM</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/css?family=Krub:400,700&display=swap" rel="stylesheet">
+    <!-- script necesarios -->
+    <script src="https://unpkg.com/scrollreveal"></script>
     <script src="https://kit.fontawesome.com/b5b7f00aae.js" crossorigin="anonymous"></script>
 
 </head>
 
 <body>
-    <div class="navegacion_principal">
-        <a href="#nav" class="mobile_menu">
-            <i class="fas fa-ellipsis-v"></i>
+
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark sticky-top">
+        <!-- Nombre de tu app -->
+        <a href="#" class="navbar-brand" style="font-size: 2rem;">
+            Mi CURRICULUM
         </a>
-        <nav id="nav" class="barra">
-            <a href="#Inicio">Inicio</a>
-            <a href="#Competencias">Competencias</a>
-            <a href="#Educacion">Educación</a>
-            <a href="#Proyectos">Proyectos</a>
-            <a href="#Intereses">Intereses</a>
-            <a href="#" class="cerrar">
-                <i class="fas fa-times"></i>
-            </a>
-        </nav>
-    </div>
+        <!-- necesario para que al presionarlo se muestre lo demas -->
+        <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#barra">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- se le pone collapse para en cierto tamaño no este colapsado -->
+        <div class="collapse navbar-collapse" id="barra">
+
+
+            <ul class="navbar-nav ml-auto enlaces-custom" style="font-size: 2rem;">
+                <li class="nav-item"><a href="#Inicio" class="nav-link">Inicio</a></li>
+                <li class="nav-item"><a href="#Competencias" class="nav-link">Competencias</a></li>
+                <li class="nav-item"><a href="#Proyectos" class="nav-link">Proyectos</a></li>
+                <li class="nav-item"><a href="#Intereses" class="nav-link">Intereses</a></li>
+            </ul>
+
+        </div>
+    </nav>
+
+
     <div class="hero">
         <div class="contenedor_hero" id="Inicio">
             <div class="foto">
 
             </div>
             <H1>Máximo Junior Apaza Chirhuana</H1>
-            <p><b> "Autodidacta, y amante de la informatica"</b></p>
+            <p><b> "Autodidacta y amante de la informatica"</b></p>
             <div class="descripcion">
                 <p>Soy una persona muy alegre, honesta pero mejor caracteristica es la responsabilidad, con una
                     facilidad de
-                    adaptarme a trabajos especiales. Siempre trato de resolver cualquier problema de la manera mas
+                    adaptarme a trabajos de gran esfuerzo. Siempre trato de resolver cualquier problema de la manera mas
                     eficaz y
                     rapida. Tengo la capacidad de se organizado y dispuesto a trabajar en equipo</p>
             </div>
+
             <div class="redes_sociales">
-                <a href="https://web.facebook.com/maximo.apazachirhuana">
+                <a href="https://web.facebook.com/maximo.apazachirhuana" target="r">
                     <i class="fab fa-facebook"></i>
                 </a>
-                <a
-                    href="https://api.whatsapp.com/send?phone=51928644700&text=Hola que tal estoy interesado en tu trabajo, podrias enviarme alguna muestra?">
+                <a href="https://api.whatsapp.com/send?phone=51928644700&text=Hola que tal estoy interesado en tu trabajo, podrias enviarme alguna muestra? "
+                    target="r">
                     <i class="fab fa-whatsapp-square"></i>
                 </a>
-                <a href="https://github.com/maximopeoficiales">
+                <a href="https://github.com/maximopeoficiales" target="r">
                     <i class="fab fa-github"></i>
                 </a>
             </div>
         </div>
     </div>
+
     <div class="contenedor">
+        <H2 id="Yo">Quien soy?</H2>
+        <div class="descripcion-quien-soy">
+        <p>Soy un joven <b>muy responsable</b>,feliz e interesante de conocer.
+            Mi mayor caracteristica es mi curiosidad por
+            aprender cosas nuevas y eso me dado muchos beneficios.</p>
+        <p>Soy desarrollador web, me fascina la programacion y la informatica <b>desde los 16 años.</b>
+            Me encanta investigar sobre tecnologias nuevas y todo lo relacionando con el internet.
+        </p>
+        <p> Me gusta compartir mis conocimientos enseñando a lo demas de esa manera uno repasa indirectamente.</p>
+        </div>
+
         <h2 id="Competencias">Competencias</h2>
 
         <div class="competencia">
             <ul class="contenido_competencia">
-                <H3>Lenguajes de programación</H3>
-                <li>Java al 50%</li>
-                <li>Visual Basic al 50%</li>
-                <li>PHP al 60%</li>
-                <li>HTML5 al 50%</li>
-                <LI>JavaScript al 30%</LI>
-                <li>SQL al 40%</li>
+                <H3 style="font-weight: 700;">Lenguajes de programación</H3>
+                <li>Java</li>
+                <div class="progress">
+                    <div class="progress-bar progress-bar-striped progress-bar-animated bg-info" role="progressbar"
+                        aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width: 75%"></div>
+                </div>
+                <li>Visual Basic</li>
+                <div class="progress">
+                    <div class="progress-bar progress-bar-striped progress-bar-animated bg-info " role="progressbar"
+                        aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 80%"></div>
+                </div>
+                <li>PHP</li>
+                <div class="progress">
+                    <div class="progress-bar progress-bar-striped progress-bar-animated bg-info " role="progressbar"
+                        aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 70%"></div>
+                </div>
+                <li>HTML5</li>
+                <div class="progress">
+                    <div class="progress-bar progress-bar-striped progress-bar-animated bg-info " role="progressbar"
+                        aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 80%"></div>
+                </div>
+                <LI>JavaScript</LI>
+                <div class="progress">
+                    <div class="progress-bar progress-bar-striped progress-bar-animated bg-info " role="progressbar"
+                        aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 40%"></div>
+                </div>
+                <li>SQL</li>
+                <div class="progress">
+                    <div class="progress-bar progress-bar-striped progress-bar-animated bg-info" role="progressbar"
+                        aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 40%"></div>
+                </div>
             </ul>
             <div class="contenido_competencia">
                 <img src="img/lenguajes.jpg" alt="imagen de Lenguajes">
@@ -91,7 +142,7 @@
                     <img src="img/instituto.jpg" alt="instituto">
                     <div class="informacion">
                         <h3>Idat - Desarrollo de Sistemas e Información</h3>
-                        <p><b>2018-Actualmente</b></p>
+                        <p><b>2019-Actualmente</b></p>
                         <p><b>Lima-San Juan de Miraflores</b></p>
                     </div>
                 </div>
@@ -100,27 +151,36 @@
         <main>
 
             <h2 id="Proyectos">Mis Proyectos</h2>
-            <div class="proyectos">
+            <div class="proyectos text-center">
 
                 <div class="proyecto">
                     <a href="img/avicola.PNG" target=_blank>
                         <img src="img/avicola.PNG" alt="proyecto1" width="auto" height="auto">
                     </a>
-                    <h3>Avicola Proyect</h3>
+                    <a href="https://github.com/maximopeoficiales/Sistema_Ventas_Avicola"
+                        class="btn btn-primary rounded-pill " target="r" style="margin-top: 2rem;">
+                        <h3>Avicola Proyect</h3>
+                    </a>
                 </div>
 
                 <div class="proyecto">
                     <a href="img/juego.PNG" target=_blank>
                         <img src="img/juego.PNG" alt="proyecto1" width="auto" height="auto">
                     </a>
-                    <h3>Juego en JS</h3>
+                    <a href="https://maximopeoficiales.github.io/JS_GAME/" class="btn btn-primary rounded-pill"
+                        target="r" style="margin-top: 2rem;">
+                        <h3>Juego en JS</h3>
+                    </a>
                 </div>
 
                 <div class="proyecto">
                     <a href="img/pasteleria.PNG" target=_blank>
                         <img src="img/pasteleria.PNG" alt="proyecto1" width="auto" height="auto">
                     </a>
-                    <h3>Pasteleria Fresy</h3>
+                    <a href="https://pasteleriafresy.netlify.com/" target="r" class="btn btn-primary rounded-pill"
+                        style="margin-top: 2rem;">
+                        <h3>Pasteleria Fresy</h3>
+                    </a>
                 </div>
 
 
@@ -128,7 +188,10 @@
                     <a href="img/mexflix.PNG" target=_blank>
                         <img src="img/mexflix.PNG" alt="proyecto1" width="auto" height="auto">
                     </a>
-                    <h3>Clon MVC Basico de Netflix</h3>
+                    <a href="https://github.com/maximopeoficiales/Mexflix" target="r"
+                        class="btn btn-primary rounded-pill" style="margin-top: 2rem;">
+                        <h3>MVC Clon de Netflix</h3>
+                    </a>
                 </div>
 
 
@@ -136,30 +199,40 @@
                     <a href="img/productos.PNG" target=_blank>
                         <img src="img/productos.PNG" alt="proyecto1" width="auto" height="auto">
                     </a>
-                    <h3>App de Productos</h3>
+                    <a href="" class="btn btn-primary rounded-pill" style="margin-top: 2rem;">
+                        <h3>App de Productos</h3>
+                    </a>
                 </div>
 
                 <div class="proyecto">
                     <a href="img/blog_cafe.PNG" target=_blank>
                         <img src="img/blog_cafe.PNG" alt="proyecto1" width="auto" height="auto">
                     </a>
-                    <h3>Blog de Cafe</h3>
+
+                    <a href="" class="btn btn-primary rounded-pill" style="margin-top: 2rem;">
+                        <h3>Blog del Cafe</h3>
+                    </a>
                 </div>
 
 
 
         </main>
         <section>
+            <a href="" href="https://github.com/maximopeoficiales" target="r"
+                class="btn btn-danger d-block mt-5 mb-5 rounded-pill" style="font-size: 2rem;">Ver todos los
+                proyectos</a>
 
             <h2 id="Intereses">Mis Intereses</h2>
             <div class="interes">
                 <div class="interes_lista">
                     <ul>
-                        <li>Viajar a conocer las empresas mas grandes en el ambito tecnologico
+                        <li>Llegar a construir una marca profesional en linea, como tambien en la vida real.
                         </li>
-                        <li>Brindar cursos por plataformas virtuales como Udemy,Platzi, EDteam
+                        <li>Brindar cursos por plataformas virtuales como Udemy entre otras
                         </li>
-                        <li>Mejorar mis conocimientos con proyectos reales</li>
+                        <li>Mejorar mis conocimientos academicos y plasmarlos en proyectos reales</li>
+                        <li>Es ironico pero me encantaria conocer algun dia a nuestros pastores en la informatica</li>
+
                     </ul>
                 </div>
                 <div class="imagenes">
@@ -173,6 +246,25 @@
 
 
     </div>
+    <div class="card text-center">
+
+        <div class="card-body">
+            <h5 class="card-title">Mi curriculum 2019 &copy;</h5>
+            <p class="card-text">¡Esta pagina esta constante actualizacion!</p>
+            <a href="#Inicio" class="btn btn-primary">Ver de nuevo</a>
+        </div>
+    </div>
+
+    <script src="js/scrollreveal.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
+        </script>
 </body>
 
 </html>
