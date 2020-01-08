@@ -109,12 +109,18 @@ h2 {
 
 .hero {
   background-image: url(../img/hero2.jpg);
-  height: 100vh;
+  height: 768px;
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   position: relative;
 }
+@media (min-width: ) {
+  .hero{
+    height: 100vh;
+  }
+}
+
 .hero::after {
   /* pseudoelemento */
   content: "";
